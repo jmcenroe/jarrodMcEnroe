@@ -13,9 +13,8 @@
 <body>
 
     <!-- Navigation -->
-    <div class='container'>
         <a class="menu-toggle" href="#">
-            <i class="fa fa-bars"></i>
+            <i class="fas fa-bars"></i>
         </a>
           <nav id="sidebar-wrapper">
               <ul class="sidebar-nav">
@@ -26,7 +25,10 @@
                       <a class="js-scroll-trigger" href="#page-top">Home</a>
                   </li>
                   <li class="sidebar-nav-item">
-                      <a class="js-scroll-trigger" href="#about">About</a>
+                      <a class="js-scroll-trigger" href="#profile">About</a>
+                  </li>
+                  <li class="sidebar-nav-item">
+                    <a class="js-scroll-trigger" href="#services">Services</a>
                   </li>
                   <li class="sidebar-nav-item">
                       <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -36,30 +38,39 @@
                   </li>
               </ul>
           </nav>
-    </div>
     <!-- Main Page Image -->
         <div class='hero'>
             <h1>Jarrod McEnroe</h1>
-            <h3>Dedicated.</h3>
-            <h3>Developer.</h3>
-            <h3>Professional.</h3>
+            <h3>
+                <ul class="byline">
+                    <li>Dedicated.</li>
+                    <li>Developer.</li>
+                    <li>Professional.</li>
+                </ul>
+            </h3>
         </div>
 
     <!-- Profile Seciton -->
-    <section class='container profile'>
+    <section class='content-section' id='profile'>
+        <div class='container'>
+            <div class='content-section-heading'>
+                <h3>About</h3>
+                <h2>Who I Am</h2>
+            </div>
+            <img src='assets/images/profile.jpg' class='profile-pic' alt='Jarrod McEnroe'>
 
-        <img src='assets/images/profile.jpg' class='auth-image' alt='Jarrod McEnroe'>
+            <p>I haven't always been a developer, but I have always had a curious mind, constantly wondering about the inner workings of things and why they work the way they do. I started by playing around on the internet, like many people. Then that same curiosity sparked and I jumped into web development.</p>
 
-        <p>I haven't always been a developer, but I have always had a curious mind, constantly wondering about the inner workings of things and why they work the way they do. I started by playing around on the internet, like many people. Then that same curiosity sparked and I jumped into web development.</p>
+            <p>Before becoming a web developer, I worked in regular office jobs for 10 years. The need to get creative and understand the technology I use daily became too strong to ignore. I decided I needed a change. I started by recreating simple mockups of web pages I found. The more I practiced coding as a hobby, the more fun (and frustrating) it became. After many attempts to teach myself to code, I decided to enroll in a coding bootcamp.</p> 
 
-        <p>Before becoming a web developer, I worked in regular office jobs for 10 years. The need to get creative and understand the technology I use daily became too strong to ignore. I decided I needed a change. I started by recreating simple mockups of web pages I found. The more I practiced coding as a hobby, the more fun (and frustrating) it became. After many attempts to teach myself to code, I decided to enroll in a coding bootcamp.</p> 
-
-        <p>There, I have learned many technologies necessary for full stack web development. With these skills, I am able to put both thoughts and functionality together in a way that makes intuitive sense for users and for other developers alike.</p>
+            <p>There, I have learned many technologies necessary for full stack web development. With these skills, I am able to put both thoughts and functionality together in a way that makes intuitive sense for users and for other developers alike.</p>
+        </div>
     </section>
 
     <!-- Services Section -->
-    <section class='container services'>
-        <div class='services-heading'>
+    <section class='content-section' id='services'>
+        <div class='content-section-heading'>
+            <h3>Services</h3>
             <h2>What I Offer</h2>
         </div>
         <div class='javascript'>
@@ -86,24 +97,24 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class='container portfolio'>
-        <div class='portfolio-heading'>
+    <section class='content-section' id='portfolio'>
+        <div class='content-section-heading'>
             <h3>Portfolio</h3>
             <h2>Recent Projects</h2>
         </div>
-        <div class='portfolio-item'>
+        <div>
             <a href='#'>
-                <img src='assets/images/brewpin.jpg' alt='Brew-Pin'>
+                <img class='portfolio-item brew-pin' src='assets/images/brewpin.jpg' alt='Brew-Pin'>
+            </a>
+        </div>
+        <div>
+            <a  class='portfolio-item'href='#'>
+                <img class='portfolio-item' src='assets/images/got.png' alt='Game-of-Trades'>
             </a>
         </div>
         <div class='portfolio-item'>
             <a href='#'>
-                <img src='assets/images/got.jpg' alt='Game-of-Trades'>
-            </a>
-        </div>
-        <div class='portfolio-item'>
-            <a href='#'>
-             <img src='assets/images/recre-entals.jpg' alt='RecreEntals'>
+                <img class='portfolio-item' src='assets/images/recre-entals.jpg' alt='RecreEntals'>
             </a>
         </div>
         <div class='portfolio-item'>
@@ -113,32 +124,41 @@
                         <h2>Other Projects</h2>
                     </span>
                 </span>
-                <img src='assets/images/git-show.jpg' alt='git-showcase'>
+                <img class='portfolio-item' src='assets/images/git-show.jpeg' alt='git-showcase'>
             </a>
         </div>
     </section>
 
+    <!-- Call to Action -->
+    <section class='content-section'>
+        <div class='container'>
+            <h2>The buttons below are impossible to resist...</h2>
+            <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
+            <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="footer text-center">
-        <div class="container">
-            <ul class="list-inline mb-5">
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="https://github.com/jmcenroe">
-                <i class="fab fa-github"></i>
+    <footer>
+        <div class='container'>
+            <ul class='social-links'>
+                <li class='social-inline-item'>
+                    <a class='social-link' href='https://github.com/jmcenroe'>
+                <i class='fab fa-github'></i>
             </a>
                 </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/jwmcenroe/">
-                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                <li class='social-inline-item'>
+                    <a class='social-link' href='https://www.linkedin.com/in/jwmcenroe/'>
+                <i class='fab fa-linkedin-in'></i>
             </a>
                 </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white" href="https://stackexchange.com/users/11518074/jarrod-mcenroe">
-                <i class="fab fa-stack-overflow" aria-hidden="true"></i>
+                <li class='social-inline-item'>
+                    <a class='social-link' href='https://stackexchange.com/users/11518074/jarrod-mcenroe'>
+                <i class='fab fa-stack-overflow'></i>
             </a>
                 </li>
             </ul>
-            <p class="text-muted small mb-0">Copyright &copy; Jarrod McEnroe 2018</p>
+            <p class='footer-text'>Copyright &copy; Jarrod McEnroe 2018</p>
         </div>
     </footer>
 
