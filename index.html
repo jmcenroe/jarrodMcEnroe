@@ -4,8 +4,8 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name='author' content='Jarrod McEnroe'>
-    <link rel='stylesheet' type='text/css' href='assets/css/reset.css'>
-    <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
+    <link rel='stylesheet' type='text/css' href='./assets/css/reset.css'>
+    <link rel='stylesheet' type='text/css' href='./assets/css/style.css'>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script>
     <title>Jarrod McEnroe</title>
@@ -37,133 +37,137 @@
               </ul>
           </nav>
     </div>
+
     <!-- Main Page Image -->
-        <div class='hero'>
-            <h1>Jarrod McEnroe</h1>
-            <h3>Dedicated.</h3>
-            <h3>Developer.</h3>
-            <h3>Professional.</h3>
-        </div>
+    <div class='hero'>
+        <h1>Jarrod McEnroe</h1>
+        <h3>
+            <ul class="byline">
+                <li>Dedicated.</li>
+                <li>Developer.</li>
+                <li>Professional.</li>
+            </ul>
+        </h3>
+    </div>
 
     <!-- Profile Seciton -->
-    <section class='container profile'>
+    <section class='content-section profile-bg' id='about'>
+        <div class='container'>
+            <div class='content-section-heading'>
+                <h3>About Me</h3> 
+                <h2>Who I Am</h2>  
+                <div class='about-detail'>
+            </div>
+                <img src='./assets/images/profile.jpg' class='auth-img' alt='Jarrod McEnroe'>
+                <div class='bio'>
+                    <p>I haven't always been a developer, but I have always had a curious mind, constantly wondering about the inner workings of things and why they work the way they do. I started by playing around on the internet, like many people. Then that same curiosity sparked and I jumped into web development.</p>
 
-        <img src='assets/images/profile.jpg' class='auth-image' alt='Jarrod McEnroe'>
+                    <br>
 
-        <p>I haven't always been a developer, but I have always had a curious mind, constantly wondering about the inner workings of things and why they work the way they do. I started by playing around on the internet, like many people. Then that same curiosity sparked and I jumped into web development.</p>
+                    <p>I worked in regular office jobs for 10 years before becoming a web developer. The need to get creative and understand the technology I use daily became too strong to ignore. I decided I needed a change. I started by recreating simple mockups of web pages I found. The more I practiced coding as a hobby, the more fun (and frustrating) it became. After many attempts to teach myself to code, I decided to enroll in a coding bootcamp.</p> 
 
-        <p>Before becoming a web developer, I worked in regular office jobs for 10 years. The need to get creative and understand the technology I use daily became too strong to ignore. I decided I needed a change. I started by recreating simple mockups of web pages I found. The more I practiced coding as a hobby, the more fun (and frustrating) it became. After many attempts to teach myself to code, I decided to enroll in a coding bootcamp.</p> 
+                    <br>
 
-        <p>There, I have learned many technologies necessary for full stack web development. With these skills, I am able to put both thoughts and functionality together in a way that makes intuitive sense for users and for other developers alike.</p>
+                    <p>There, I learned the many technologies of full stack web development. With these skills, I am able to put both thoughts and functionality together in a way that makes intuitive sense for users and for other developers alike.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Services Section -->
-    <section class='container services'>
-        <div class='services-heading'>
-            <h2>What I Offer</h2>
-        </div>
-        <div class='javascript'>
+    <section class='content-section section-bg' id='services'>
+        <div class='container'>
+            <div class='content-section-heading'>
+                <h3>Services</h3>
+                <h2>What I Offer</h2>
+            </div>
+
             <div class='service-icon'>
                 <i class='fab fa-js-square'></i>
+                <h4>JavaScript</h4>
+                <p class='service-desc'>I make websites more interactive!</p>
             </div>
-            <h4>JavaScript</h4>
-            <p class='js-desc'>I make websites more interactive!</p>
-        </div>
-        <div class='servers'>
+
             <div class='service-icon'>
                 <i class='fas fa-server'></i>
+                <h4>Servers</h4>
+                <p class='service-desc'>I serve your content securely and consistently every time.</p>
             </div>
-            <h4>Servers</h4>
-            <p class='server-desc'>I serve your content securely and consistently every time.</p>
-        </div>
-        <div class='databases'>
+
             <div class='service-icon'>
                 <i class='fas fa-database'></i>
+                <h4>Databases</h4>
+                <p class='service-desc'>I can organize & serve your content the right way every time!</p>
             </div>
-            <h4>Databases</h4>
-            <p class='db-desc'>I can organize & serve your content the right way every time!</p>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section class='container portfolio'>
-        <div class='portfolio-heading'>
-            <h3>Portfolio</h3>
-            <h2>Recent Projects</h2>
-        </div>
-        <div class='portfolio-item'>
-            <a href='#'>
-                <img src='assets/images/brewpin.jpg' alt='Brew-Pin'>
-            </a>
-        </div>
-        <div class='portfolio-item'>
-            <a href='#'>
-                <img src='assets/images/got.jpg' alt='Game-of-Trades'>
-            </a>
-        </div>
-        <div class='portfolio-item'>
-            <a href='#'>
-             <img src='assets/images/recre-entals.jpg' alt='RecreEntals'>
-            </a>
-        </div>
-        <div class='portfolio-item'>
-            <a href='https://www.gitshowcase.com/jmcenroe'>
-                <span class="caption">
-                    <span class="caption-content">
-                        <h2>Other Projects</h2>
+    <section class='content-section'>
+        <div class='container'>
+            <div class='content-section-heading portfolio-heading'>
+                <h3>Portfolio</h3>
+                <h2>Recent Projects</h2>
+            <div>
+                <a class='portfolio-item' href='#'>
+                    <img src='assets/images/brewpin.jpg' alt='Brew-Pin'>
+                </a>
+            </div>
+            <div>
+                <a class='portfolio-item' id='got' href='#'>
+                    <img src='assets/images/got.png' alt='Game-of-Trades'>
+                </a>
+            </div>
+            <div>
+                <a class='portfolio-item' href='#'>
+                <img src='assets/images/recre-entals.jpeg' alt='RecreEntals'>
+                </a>
+            </div>
+            <div>
+                <a class='portfolio-item' href='https://www.gitshowcase.com/jmcenroe'>
+                    <span class='caption' id='git-show'>
+                        <span class='caption-content'>
+                            <h2>Other Projects</h2>
+                        </span>
                     </span>
-                </span>
-                <img src='assets/images/git-show.jpg' alt='git-showcase'>
-            </a>
+                    <img src='assets/images/git-show.jpeg' alt='git-showcase'>
+                </a>
+            </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class='content-section section-bg'>
+        <div class='container'>
+            <h2>The button below is impossible to resist...</h2>
+            <a href='jmcenroeresume.html' class='btn resume-link'>Click Me!</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
-        <div class="container">
-            <ul class="list-inline mb-5">
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="https://github.com/jmcenroe">
-                <i class="fab fa-github"></i>
-            </a>
+    <footer>
+        <div class='container'>
+            <ul class='footer'>
+                <li class='list-inline-item'>
+                    <a class='social-link' href='https://github.com/jmcenroe'>
+                        <i class='fab fa-github social' aria-hidden='true'></i>
+                    </a>
                 </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/jwmcenroe/">
-                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-            </a>
+                <li class='list-inline-item'>
+                    <a class='social-link' href='https://www.linkedin.com/in/jwmcenroe/'>
+                        <i class='fab fa-linkedin-in social' aria-hidden='true'></i>
+                    </a>
                 </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white" href="https://stackexchange.com/users/11518074/jarrod-mcenroe">
-                <i class="fab fa-stack-overflow" aria-hidden="true"></i>
-            </a>
+                <li class='list-inline-item'>
+                    <a class='social-link' href='https://stackexchange.com/users/11518074/jarrod-mcenroe'>
+                        <i class='fab fa-stack-overflow social' aria-hidden='true'></i>
+                    </a>
                 </li>
             </ul>
-            <p class="text-muted small mb-0">Copyright &copy; Jarrod McEnroe 2018</p>
+            <p class='footer copyright'>Copyright &copy; Jarrod McEnroe 2018</p>
         </div>
     </footer>
 
-   <!-- <footer>
-        <div class='container'>
-            <ul>
-                <li>
-                    <a href='https://github.com/jmcenroe'>
-                        <i class='fab fa-github'></i>
-                    </a>
-                </li>
-                <li>
-                    <a href='https://www.linkedin.com/in/jwmcenroe/'>
-                        <i class='fab fa-linkedin-in'></i>
-                    </a>
-                </li>
-                <li>
-                    <a href='https://stackexchange.com/users/11518074/jarrod-mcenroe'>
-                        <i class='fab fa-stack-overflow'></i>
-                    </a>
-                </li>
-            </ul>
-            <p>Copyright &copy; Jarrod McEnroe 2018</p>
-        </div>
-    </footer> -->
-
+    <!-- JavaScript -->
+    <script src='./assets/javascript/script.js'></script>
 </body>
 </html>
