@@ -183,7 +183,9 @@ a:hover, a:focus, a:active {
 // }
 
 .home-hero {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -196,11 +198,8 @@ a:hover, a:focus, a:active {
 }
 
 .hero-content {
-  display: table-cell;
   position: relative;
   z-index: 10;
-  // text-align: center;
-  // vertical-align: middle
 }
 
 .hero-content h1 {
@@ -208,6 +207,10 @@ a:hover, a:focus, a:active {
   line-height: 1em;
   color: #fff;
   margin-bottom: 0rem
+}
+
+.typetext {
+  animation: caret 1s steps(1) infinite;
 }
 
 // ==========================================================
