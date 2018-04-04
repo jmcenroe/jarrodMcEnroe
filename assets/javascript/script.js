@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
       // add next character to h1
       document.querySelector('span').innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
       setTimeout(function () {
-        typeWriter(text, i + 1, fnCallback)
+        typeWriter(text, i + 1, fnCallback);
       }, 100);
     }
     // text finished, call callback if there is a callback function

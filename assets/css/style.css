@@ -29,8 +29,13 @@ text-align: center;
   padding-top: 52.5rem;
 }
 
+.content-section-heading {
+  margin-top: 3em;
+}
+
 .content-section-heading h2 {
   font-size: 3rem;
+  margin-top: -0.3em;
   padding-bottom: 1em;
 }
 
@@ -44,11 +49,12 @@ a:hover, a:focus, a:active {
   color: #155d74;
 }
 
-.section-bg {
-  text-align: center;
-  background-color: #1D809F;
-  color: #fff;
-  font-size: 1.6em;
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  margin-left: 5.5rem;
 }
 
 // ==========================================================
@@ -157,9 +163,7 @@ a:hover, a:focus, a:active {
   text-align: center;
   width: 100%;
   min-height: 350px;
-  background-image: url(../images/hero.jpg);
   background-color: #252a30;
-  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;  
 }
@@ -168,6 +172,7 @@ a:hover, a:focus, a:active {
   display: flex;
   align-items: center;
   justify-content: center;
+  vertical-align: middle;
   position: absolute;
   top: 0;
   right: 0;
@@ -175,8 +180,6 @@ a:hover, a:focus, a:active {
   left: 0;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url('../images/hero.jpg');
   background-size: cover;
-  text-align: center;
-  vertical-align: middle;
 }
 
 .hero-content {
@@ -188,7 +191,7 @@ a:hover, a:focus, a:active {
   font-size: 4.5rem;
   line-height: 1em;
   color: #fff;
-  margin-bottom: 0rem
+  margin-bottom: 15rem
 }
 
 .typetext {
@@ -198,23 +201,12 @@ a:hover, a:focus, a:active {
 .learn-more a {
   color: rgba(255, 255, 255, 0.7);
   position: absolute;
-  bottom: 1rem;
   font-size: 1.3rem;
-  display: inline-block;
-  z-index: 2;
   -webkit-transition: color 0.2s ease-out; 
   transition: color 0.2s ease-out;
   text-decoration: none;
-  align-content: center;
-}
-
-.svg-inline--fa {
-  display: inline-block;
-  font-size: inherit;
-  height: 2em;
-  overflow: visible;
-  vertical-align: -.125em;
-  margin-left: 4em;
+  top: 90%;
+  left: 44.5%;
 }
 
 .learn-more a:hover {
@@ -254,38 +246,26 @@ a:hover, a:focus, a:active {
 // ==========================================================
 // Portfolio Section
 // ==========================================================
-.portfolio-heading {
-  text-align: center;
+.portfolio-item a {
+  margin: auto auto 1rem;
 }
 
-.portfolio-item {
-  position: relative;
-  overflow: hidden;
-  margin: auto auto 1rem;
+.portfolio-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
   @media (min-width: 992px) {
-    .portfolio-item {
-      max-width: none;
-      margin: 0;
-    }
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
   }
 }
 
-// .portfolio-item .caption {
-//   display: flex;
-//   height: 100%;
-//   width: 100%;
-//   background-color: rgba(33, 37, 41, 0.2);
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   z-index: 1;
-//   @media (min-width: 992px) {
-//     -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-//     -webkit-clip-path: inset(0px);
-//     clip-path: inset(0px);
-//   }
-// }
-    
 .portfolio-item .caption .caption-content {
   color: #fff;
   margin: auto 2rem 2rem;
@@ -304,32 +284,35 @@ a:hover, a:focus, a:active {
 }
 
 .portfolio-item img {
-  height: 10rem;
+  height: 13rem;
+  width: 20rem;
   float: left;
+  padding: 1em;
 }
 
-@media (min-width: 992px) {
-  .portfolio-item img {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(-1px);
-    clip-path: inset(-1px);
-  }
-  .portfolio-item:hover img {
-    background-color: rgba(29, 128, 159, 0.9);
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
-  .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
-}
+// @media (min-width: 992px) {
+//   .portfolio-item img {
+//     -webkit-transition: -webkit-clip-path 0.25s ease-out;
+//     -webkit-clip-path: inset(-1px);
+//     clip-path: inset(-1px);
+//   }
+//   .portfolio-item:hover img {
+//     background-color: rgba(29, 128, 159, 0.9);
+//     -webkit-clip-path: inset(2rem);
+//     clip-path: inset(2rem);
+//   }
+//   .portfolio-item:hover .caption {
+//     background-color: rgba(29, 128, 159, 0.9);
+//     -webkit-clip-path: inset(2rem);
+//     clip-path: inset(2rem);
+//   }
+// }
 
 // ==========================================================
 // Footer
 // ==========================================================
 footer {
+  display: flex;
   padding: 5rem;
   margin: 3rem 0;
   margin-left: 22rem; 
@@ -339,12 +322,13 @@ footer {
 
 .footer-container {
   text-align: center;
+  padding: 2em;
 }
 
 .list-inline-item {
   display: flex;
   float: left;
-  padding: 1em 0;
+  padding: 3em 0;
 }
 
 footer .social-link:hover {
@@ -353,7 +337,7 @@ footer .social-link:hover {
 }
 
 footer .social-link {
-  display: block;
+  // display: block;
   height: 2rem;
   width: 2rem;
   line-height: 2.3rem;
@@ -361,13 +345,16 @@ footer .social-link {
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  margin: 0 1rem;
+  margin: 0 1rem;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .copyright {
-  margin-bottom: 0;
   color: #6c757d;
   font-size: 80%;
+  margin-right: 14em;
 }
 
 
