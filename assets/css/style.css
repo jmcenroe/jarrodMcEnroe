@@ -55,6 +55,7 @@ a:hover, a:focus, a:active {
   height: 1em;
   overflow: visible;
   margin-left: 5.5rem;
+  margin-top: .3rem;
 }
 
 // ==========================================================
@@ -259,11 +260,6 @@ a:hover, a:focus, a:active {
   top: 0;
   bottom: 0;
   z-index: 1;
-  @media (min-width: 992px) {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-    -webkit-clip-path: inset(0px);
-    clip-path: inset(0px);
-  }
 }
 
 .portfolio-item .caption .caption-content {
@@ -284,10 +280,14 @@ a:hover, a:focus, a:active {
 }
 
 .portfolio-item img {
-  height: 13rem;
+  height: 12rem;
   width: 20rem;
   float: left;
   padding: 1em;
+}
+
+.portfolio-item a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 // @media (min-width: 992px) {
@@ -331,13 +331,8 @@ footer {
   padding: 3em 0;
 }
 
-footer .social-link:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-}
-
-footer .social-link {
-  // display: block;
+.social-link { 
+  display: flex;
   height: 2rem;
   width: 2rem;
   line-height: 2.3rem;
@@ -345,10 +340,12 @@ footer .social-link {
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  margin: 0 1rem;  
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 1rem; 
+}
+
+.social-link:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
 }
 
 .copyright {
