@@ -34,14 +34,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
   }
   // start the text animation
   StartTextAnimation(0);
-});
 
-window.sr = ScrollReveal();
-// sr.reveal('.hero');
-sr.reveal('.hero-content');
-sr.reveal('.learn-more');
-sr.reveal('.hero-content');
-sr.reveal('.hero-content');
-sr.reveal('.hero-content');
-sr.reveal('.hero-content');
-sr.reveal('.hero-content');
+  // Click 'Learn More' arrow to see projects
+  $('.learn-more').on('click', function () {
+    $('html body').animate({
+      scrollTop: $('#portfolio').offset().top
+    }, 1000);
+  });
+
+});
