@@ -34,12 +34,13 @@ document.addEventListener('DOMContentLoaded', function (event) {
   }
   // start the text animation
   StartTextAnimation(0);
+});
 
-  // Click 'Learn More' arrow to see projects
-  $('.learn-more').on('click', function () {
-    $('html body').animate({
-      scrollTop: $('#portfolio').offset().top
-    }, 1000);
+// Click 'Learn More' arrow to see projects
+$('.learn-more').find('a').click(function(e) {
+  e.preventDefault();
+  let section = $(this).attr('href');
+  $('html, body').animate({
+    scrollTop: $(section).offset().top
   });
-
 });
