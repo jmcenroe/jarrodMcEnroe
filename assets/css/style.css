@@ -173,7 +173,6 @@ a:hover, a:focus, a:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  vertical-align: middle;
   position: absolute;
   top: 0;
   right: 0;
@@ -201,16 +200,13 @@ a:hover, a:focus, a:active {
 
 .learn-more a {
   color: rgba(255, 255, 255, 0.7);
-  position: relative;
+  position: absolute;
   font-size: 1.3rem;
   -webkit-transition: color 0.2s ease-out; 
   transition: color 0.2s ease-out;
   text-decoration: none;
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 0;
+  top: 90%;
+  left: 43.6%;
 }
 
 .learn-more a:hover {
@@ -254,34 +250,6 @@ a:hover, a:focus, a:active {
   margin: auto auto 1rem;
 }
 
-.portfolio-item .caption {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
-.portfolio-item .caption .caption-content {
-  color: #fff;
-  margin: auto 2rem 2rem;
-  @media (min-width: 992px) {
-    transition: opacity 0.25s;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
-  }
-}
-
-.portfolio-item .caption .caption-content h2 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  margin-bottom: 5rem;
-}
-
 .portfolio-item img {
   height: 12rem;
   width: 20rem;
@@ -289,27 +257,10 @@ a:hover, a:focus, a:active {
   padding: 1em;
 }
 
-.portfolio-item a:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.portfolio-item img:hover {
+  padding: 0;
+  transition: padding 0.15s ease-in-out;
 }
-
-// @media (min-width: 992px) {
-//   .portfolio-item img {
-//     -webkit-transition: -webkit-clip-path 0.25s ease-out;
-//     -webkit-clip-path: inset(-1px);
-//     clip-path: inset(-1px);
-//   }
-//   .portfolio-item:hover img {
-//     background-color: rgba(29, 128, 159, 0.9);
-//     -webkit-clip-path: inset(2rem);
-//     clip-path: inset(2rem);
-//   }
-//   .portfolio-item:hover .caption {
-//     background-color: rgba(29, 128, 159, 0.9);
-//     -webkit-clip-path: inset(2rem);
-//     clip-path: inset(2rem);
-//   }
-// }
 
 // ==========================================================
 // Footer
