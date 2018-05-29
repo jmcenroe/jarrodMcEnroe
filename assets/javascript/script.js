@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function (event) {
+document.addEventListener('DOMContentLoaded', function (e) {
   var typeText = ['web applications.', 'user interfaces.', 'landing pages.'];
 
   function typeWriter(text, i, fnCallback) {
     // check if text isn't finished yet
     if (i < (text.length)) {
-      // add next character to h1
+      // add next character to span
       document.querySelector('span').innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
       setTimeout(function () {
         typeWriter(text, i + 1, fnCallback);
@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
 // Click 'Learn More' arrow to see projects
 $('.learn-more').find('a').click(function(e) {
   e.preventDefault();
-  let section = $(this).attr('href');
-  $('html, body').animate({
+  let section = $('#portfolio');
+  section.animate({
     scrollTop: $(section).offset().top
   });
 });

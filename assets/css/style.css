@@ -25,10 +25,6 @@ text-align: center;
   clear: both;
 }
 
-.content-section {
-  padding-top: 52.5rem;
-}
-
 .content-section-heading {
   margin-top: 3em;
 }
@@ -45,17 +41,22 @@ text-align: center;
   padding-bottom: .5em;
 }
 
-a:hover, a:focus, a:active {
+a:hover, a:focus, a:active, a:visited {
   color: #155d74;
 }
 
 .svg-inline--fa {
-  display: inline-block;
+  display: flex;
   font-size: inherit;
   height: 1em;
   overflow: visible;
   margin-left: 5.5rem;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
+  color: red;
+}
+
+li {
+  list-style: none;
 }
 
 // ==========================================================
@@ -158,36 +159,25 @@ a:hover, a:focus, a:active {
 // ==========================================================
 // Main Image
 // ==========================================================
-.hero {
-  height: 100vh;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  min-height: 350px;
-  background-color: #252a30;
-  background-position: center center;
-  background-repeat: no-repeat;  
-}
+// .hero {
+//   height: 800px;
+//   position: relative;
+//   text-align: center;
+//   width: 100%;
+//   min-height: 350px;
+//   background-position: center center;
+//   background-repeat: no-repeat;  
+// }
 
 .home-hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  height: 100vh;
+  position: relative;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url('../images/hero.jpg');
   background-size: cover;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 10;
-}
-
 .hero-content h1 {
+  padding-top: 15%;
   font-size: 4.5rem;
   line-height: 1em;
   color: #fff;
@@ -258,7 +248,7 @@ a:hover, a:focus, a:active {
 }
 
 .portfolio-item img:hover {
-  padding: 0;
+  padding: 0em;
   transition: padding 0.15s ease-in-out;
 }
 
@@ -266,23 +256,29 @@ a:hover, a:focus, a:active {
 // Footer
 // ==========================================================
 footer {
-  display: flex;
-  padding: 5rem;
-  margin: 3rem 0;
   margin-left: 22rem; 
   color: #6c757d;
   font-size: .7em;
 }
 
 .footer-container {
-  text-align: center;
+  display: flex;
   padding: 2em;
 }
 
-.list-inline-item {
-  display: flex;
-  float: left;
+.copyright {
+  color: #6c757d;
+  font-size: .8em;
+  margin-right: 24em;
+}
+
+.social-list-item {
+  flex: 1 1 auto;
   padding: 3em 0;
+}
+
+.svg-inline--fa {
+  margin-right: 3em;
 }
 
 .social-link { 
@@ -294,18 +290,10 @@ footer {
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  margin: 0 1rem; 
 }
 
 .social-link:hover {
   background-color: rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-}
-
-.copyright {
-  color: #6c757d;
-  font-size: 80%;
-  margin-right: 14em;
 }
 
 
