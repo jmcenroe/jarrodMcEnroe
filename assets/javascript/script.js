@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function (e) {
 $('.learn-more').find('a').click(function(e) {
   e.preventDefault();
   let section = $('#portfolio');
-  section.animate({
+  $('body,html').animate({
     scrollTop: $(section).offset().top
   });
 });
