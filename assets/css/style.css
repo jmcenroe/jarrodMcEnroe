@@ -38,20 +38,19 @@ text-align: center;
 .content-section-heading h3 {
   font-size: 20px;
   text-transform: uppercase;
-  padding-bottom: .5em;
 }
 
 a:hover, a:focus, a:active, a:visited {
   color: #155d74;
 }
 
-.svg-inline--fa {
-  font-size: inherit;
-  overflow: visible;
-  // margin-left: 5.5rem;
-  margin-top: 0.3rem;
-  color: red;
-}
+// .svg-inline--fa {
+//   font-size: inherit;
+//   overflow: visible;
+//   // margin-left: 5.5rem;
+//   margin-top: 0.3rem;
+//   color: red;
+// }
 
 // ==========================================================
 // Navigation Sidebar 
@@ -255,24 +254,31 @@ a:hover, a:focus, a:active, a:visited {
 // Footer
 // ==========================================================
 footer {
-  height: 210px;
+  height: 10px;
   color: #6c757d;
   font-size: 70%;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 .copyright {
   color: #6c757d;
   font-size: 80%;
-  margin-left: 30%;
+  margin-left: 39%;
 }
 
 ul {
-  display: inline-block;
+  display: inline-flex;
+  margin-left: 40%;
+}
+
+ul:second-child {
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 li {
   list-style: none;
+  margin: 1%;
 }
 
 li a { 
@@ -287,10 +293,13 @@ li a {
 
 li a:hover {
   background-color: rgba(0, 0, 0, 0.3);
+  color: #155d74;
 }
 
-.fab {
-  margin-left: -10px;
+.svg-inline--fa {
+  color: #f8f9face;
+  margin-left: 6px;
+  margin-top: 5px;
 }
 
 
